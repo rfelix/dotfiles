@@ -1,0 +1,1 @@
+open -a "iA Writer" $1

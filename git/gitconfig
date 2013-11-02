@@ -1,0 +1,56 @@
+[color]
+  ui = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[format]
+  pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  noff = merge --no-ff
+  ff = merge --ff-only
+
+  # log
+  l = log --graph --date=short
+  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+
+[core]
+  autocrlf = input
+  editor = vim
+
+[branch]
+  # http://gitready.com/beginner/2009/03/09/remote-tracking-branches.html
+  autosetupmerge = true
+
+[merge]
+  summary = true
+  verbosity = 1
+
+[push]
+  # 'git push' will push the current branch to its tracking branch
+  # the usual default is to push all branches
+  default = tracking
+
+[advice]
+  statusHints = false
+
+[rerere]
+  # Remember my merges
+  # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
+  enabled = true
+
+[include]
+  path = .gitconfig.user

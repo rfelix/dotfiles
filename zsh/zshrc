@@ -1,0 +1,7 @@
+source $HOME/.zprezto/runcoms/zshrc
+
+# Place to store sensitive info (aliased to ~/.secrets)
+source $HOME/.dotfiles/zsh/secrets
+
+# Customize ZSH in an organized manner
+for config_file ($HOME/.dotfiles/zsh/settings/*.zsh) source $config_file

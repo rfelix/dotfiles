@@ -1,0 +1,17 @@
+DROPBOX_DOTFILES_FOLDER=$HOME/Dropbox/SymLinks/dotfiles
+
+ln -sh $DROPBOX_DOTFILES_FOLDER $HOME/.dotfiles
+ln -sh $HOME/.dotfiles/bin $HOME/bin
+ln -sh $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
+ln -sh $HOME/.dotfiles/vim $HOME/.vim
+ln -sh $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
+ln -sh $HOME/.dotfiles/git/gitignore $HOME/.gitignore
+ln -sh $HOME/.dotfiles/git/gitconfig.user $HOME/.gitconfig.user
+ln -sh $HOME/.dotfiles/zsh/prezto $HOME/.zprezto
+ln -sh $HOME/.dotfiles/zsh/secrets $HOME/.secrets
+ln -sh $HOME/.dotfiles/zsh/zlogin $HOME/.zlogin
+ln -sh $HOME/.dotfiles/zsh/zlogout $HOME/.zlogout
+ln -sh $HOME/.dotfiles/zsh/zprofile $HOME/.zprofile
+ln -sh $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
+ln -sh $HOME/.dotfiles/zsh/zpreztorc $HOME/.zpreztorc
+ln -sh $HOME/.dotfiles/zsh/zshenv $HOME/.zshenv

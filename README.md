@@ -21,17 +21,22 @@ Get the repo:
 
     $ git clone --recursive git://github.com/rfelix/dotfiles
 
+Make sure you won't commit files with sensitive information:
+
+    $ git update-index --assume-unchanged git/gitconfig.user
+    $ git update-index --assume-unchanged zsh/secrets
+
 Setup up all dotfile symlinks by running:
 
-		$ ./script/link_dotfiles
+    $ ./script/link_dotfiles
 
 Update various OSX settings:
 
-		$ ./script/configure_osx
+    $ ./script/configure_osx
 
 Install all VIM bundles:
 
-		$ vim +BundleInstall +qall
+    $ vim +BundleInstall +qall
 
 Setup iTerm2 to "Load preferences from a custom folder" to point to `dotfiles/iterm`
 

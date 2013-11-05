@@ -28,5 +28,8 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle "vim-scripts/Conque-Shell"
 Bundle "skwp/vim-ruby-conque"
 
+" Text Manipulation
+Bundle "tpope/vim-surround"
+
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

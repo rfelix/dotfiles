@@ -32,7 +32,12 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'osx' \
   'git' \
+  'ruby' \
+  'ssh' \
+  'syntax-highlighting' \
+  'history-substring-search' \
   'prompt'
 
 #

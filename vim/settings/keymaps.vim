@@ -11,6 +11,10 @@ map Q :bd<CR>
 " it doesnt get stuffed up
 set pastetoggle=<F2>
 
+" ================ File Navigation Shortcuts ========================
+
+map <C-n> <plug>NERDTreeTabsToggle<CR>
+
 " ================ Navigation/Movement Shortcuts ========================
 
 " When text is wrapped, j and k jump whole lines, now just more 1 row down

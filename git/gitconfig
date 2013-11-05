@@ -1,3 +1,17 @@
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  noff = merge --no-ff
+  ff = merge --ff-only
+  ramend = commit --amend --reuse HEAD
+  amend = commit --amend
+
+  # log
+  l = log --graph --date=short
+  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+
 [color]
   ui = true
 
@@ -14,18 +28,6 @@
 
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-
-[alias]
-  st = status
-  ci = commit
-  co = checkout
-  noff = merge --no-ff
-  ff = merge --ff-only
-
-  # log
-  l = log --graph --date=short
-  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
-  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
 
 [core]
   autocrlf = input

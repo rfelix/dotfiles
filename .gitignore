@@ -1,5 +1,5 @@
 .DS_Store
-alfred/Alfred.alfredpreferences
+alfred/
 vim/backups
 vim/view
 vim/.netrwhist
@@ -8,3 +8,5 @@ vim/spell
 vim/bundle
 vim/sessions
 .netrwhist
+git/gitconfig.user
+zsh/secrets

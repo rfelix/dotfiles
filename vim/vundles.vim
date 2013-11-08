@@ -27,6 +27,7 @@ Bundle 'jistr/vim-nerdtree-tabs'
 " Code Navigation
 Bundle "vim-scripts/Conque-Shell"
 Bundle "skwp/vim-ruby-conque"
+Bundle "tpope/vim-fugitive"
 
 " Text Manipulation
 Bundle "tpope/vim-surround"

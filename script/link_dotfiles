@@ -15,3 +15,4 @@ ln -sh $HOME/.dotfiles/zsh/zprofile $HOME/.zprofile
 ln -sh $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 ln -sh $HOME/.dotfiles/zsh/zpreztorc $HOME/.zpreztorc
 ln -sh $HOME/.dotfiles/zsh/zshenv $HOME/.zshenv
+ln -sh $HOME/.dotfiles/mackup/mackup.cfg $HOME/.mackup.cfg

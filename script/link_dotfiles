@@ -1,5 +1,16 @@
 DROPBOX_DOTFILES_FOLDER=$HOME/Dropbox/SymLinks/dotfiles
 
+GIT_USER_CONFIG=$DROPBOX_DOTFILES_FOLDER/git/gitconfig.user
+ZSH_SECRETS=$DROPBOX_DOTFILES_FOLDER/zsh/secrets
+
+# Create empty personal files if they don't exist
+if [ ! -f $GIT_USER_CONFIG ]; then
+   echo "# Custom Git settings that contain personal/sensitive info go here" > $GIT_USER_CONFIG
+fi
+if [ ! -f $ZSH_SECRETS ]; then
+   echo "# Put any API tokens or things you don't want in your public repo here" > $ZSH_SECRETS
+fi
+
 ln -sh $DROPBOX_DOTFILES_FOLDER $HOME/.dotfiles
 ln -sh $HOME/.dotfiles/bin $HOME/bin
 ln -sh $HOME/.dotfiles/vim/vimrc $HOME/.vimrc

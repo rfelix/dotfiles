@@ -1,4 +1,0 @@
-# Custom Git settings that contain sensitive info go here
-[user]
-  name = John Doe
-  email = john@doe.com

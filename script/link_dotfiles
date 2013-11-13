@@ -27,3 +27,4 @@ ln -sh $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 ln -sh $HOME/.dotfiles/zsh/zpreztorc $HOME/.zpreztorc
 ln -sh $HOME/.dotfiles/zsh/zshenv $HOME/.zshenv
 ln -sh $HOME/.dotfiles/mackup/mackup.cfg $HOME/.mackup.cfg
+ln -sh $HOME/.dotfiles/ruby/gemrc $HOME/.gemrc

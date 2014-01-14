@@ -30,3 +30,4 @@ ln -sh $HOME/.dotfiles/mackup/mackup.cfg $HOME/.mackup.cfg
 ln -sh $HOME/.dotfiles/ruby/gemrc $HOME/.gemrc
 ln -sh $HOME/.dotfiles/vimify/inputrc $HOME/.inputrc
 ln -sh $HOME/.dotfiles/vimify/editrc $HOME/.editrc
+ln -sh $HOME/.dotfiles/ssh $HOME/.ssh

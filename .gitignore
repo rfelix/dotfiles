@@ -10,3 +10,4 @@ vim/sessions
 .netrwhist
 git/gitconfig.user
 zsh/secrets
+ssh/

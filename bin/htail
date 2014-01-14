@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# vim: set ft=ruby:
+
+# This file executes as a bash script, which turns around and executes Ruby via
+# the line below. The -x argument to Ruby makes it discard everything before
+# the second "!ruby" shebang. This allows us to work on Linux, where the
+# shebang can only have one argument so we can't directly say
+# "#!/usr/bin/env ruby --disable-gems". Thanks for that, Linux.
+#
+# If this seems confusing, don't worry. You can treat it as a normal Ruby file
+# starting with the "!ruby" shebang below.
+
+exec /usr/bin/env ruby --disable-gems -x "$0" $*
+#!ruby
+
+
+def heroku_tail(app_or_remote, extra_options = nil, git_remotes = nil)
+  extra_options ||= []
+  git_remotes   ||= %x{git remote}.split("\n")
+
+  if git_remotes.include? app_or_remote
+    type = '--remote'
+  else
+    type = '--app'
+  end
+
+  exec "heroku logs --tail #{type} #{app_or_remote} #{extra_options.join(' ')}"
+end
+
+if $0 == __FILE__
+  begin
+    heroku_tail ARGV[0], ARGV[1..-1]
+  rescue SystemExit, Interrupt
+    exit(1)
+  end
+end

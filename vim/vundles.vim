@@ -26,6 +26,7 @@ Bundle "jistr/vim-nerdtree-tabs"
 Bundle "mileszs/ack.vim"
 
 " Code Navigation
+Bundle 'takac/vim-hardtime'
 Bundle "vim-scripts/Conque-Shell"
 Bundle "skwp/vim-ruby-conque"
 Bundle "tpope/vim-fugitive"

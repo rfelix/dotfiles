@@ -35,5 +35,8 @@ Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "tpope/vim-surround"
 Bundle "tpope/vim-endwise"
 
+" Language-specific modifications
+Bundle "mustache/vim-mustache-handlebars"
+
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

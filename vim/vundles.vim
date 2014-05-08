@@ -22,7 +22,8 @@ Bundle "skwp/vim-colors-solarized"
 " File Navigation
 Bundle "kien/ctrlp.vim"
 Bundle "scrooloose/nerdtree"
-Bundle 'jistr/vim-nerdtree-tabs'
+Bundle "jistr/vim-nerdtree-tabs"
+Bundle "mileszs/ack.vim"
 
 " Code Navigation
 Bundle "vim-scripts/Conque-Shell"

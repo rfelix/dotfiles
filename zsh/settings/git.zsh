@@ -1,2 +1,1 @@
-# Let more intelligent "g" shell script override alias
-unalias g
+alias git=$HOME/.dotfiles/bin/git

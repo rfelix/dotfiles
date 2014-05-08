@@ -28,9 +28,12 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle "vim-scripts/Conque-Shell"
 Bundle "skwp/vim-ruby-conque"
 Bundle "tpope/vim-fugitive"
+Bundle "kana/vim-textobj-user"
+Bundle "nelstrom/vim-textobj-rubyblock"
 
 " Text Manipulation
 Bundle "tpope/vim-surround"
+Bundle "tpope/vim-endwise"
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
